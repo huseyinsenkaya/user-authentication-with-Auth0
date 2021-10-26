@@ -1,0 +1,18 @@
+extends layout.pug
+
+block layout-content 
+    .View.WelcomeView
+        h1.Banner Eat to Live
+        .Message
+            .Title
+                h3 Making the Best 
+                h1 HEALTHY FOODS
+
+            span.Details Acces the Eat to Live Team Portal 
+        .NavButtons 
+            if isAuthenticated
+                a(href="/user")
+                    .NavButton Dive in
+            else       
+                a(href="/login")
+                    .NavButton Log in

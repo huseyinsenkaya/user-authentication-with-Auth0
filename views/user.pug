@@ -1,0 +1,14 @@
+extends layout.pug
+
+block layout-content 
+    .View.WelcomeView
+        h1.Banner Hey, #{userProfile.name.givenName}
+        .Message 
+            .Title 
+                h3 Healthy Foods 
+                h1 User Profile 
+            //-pre.Details=JSON.stringify(userProfile,null,2)
+        
+        .NavButtons 
+            a(href="/logout") 
+                .NavButton Log out
